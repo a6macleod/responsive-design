@@ -73,3 +73,32 @@
 	height: 250px;
 	background-color: #e04fe6;
 }
+
+/* Funding Startups section */
+.funding-info {
+	max-width: 100%;
+	height: 300px;
+	background-color: #37e69f;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 10px;
+}
+
+.funding-info header {
+	grid-column: 1 / -1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.funding-info header ul {
+	display: flex;
+}
+
+.funding-info header ul li {
+	padding: 0 10px;
+}
+
+.funding-highlight {
+	background-color: #5043e6;
+}
