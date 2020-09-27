@@ -138,3 +138,25 @@
 	height: 100%;
 	background-color: #5043e6;
 }
+
+/* Footer section */
+footer {
+	background-color: #141414;
+	max-width: 100%;
+	height: 400px;
+	color: white;
+}
+
+footer nav {
+	height: 200px;
+}
+
+.copyright {
+	background-color: #000000;
+	max-width: 100%;
+	height: 200px;
+}
+
+.social i {
+	color: #fff;
+}
