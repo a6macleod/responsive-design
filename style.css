@@ -81,24 +81,6 @@
 	/* Smaller link size */
 }
 
-@media (max-width: 768px) {
-	/* Move top nav to hamburger menu */
-	.condensed {
-		display: inline;
-	}
-
-	.top-nav,
-	.bottom-nav ul:first-child > * {
-		display: none;
-	}
-
-	/* Re-order featured articles */
-	.main-featured-article,
-	.featured-article {
-		grid-column: 1 / -1;
-	}
-}
-
 /* Latest News Section */
 .latest-news {
 	max-width: 100%;
@@ -134,6 +116,29 @@
 .news-article {
 	height: 200px;
 	background-color: #e04fe6;
+}
+
+@media (max-width: 768px) {
+	/* Move top nav to hamburger menu */
+	.condensed {
+		display: inline;
+	}
+
+	.top-nav,
+	.bottom-nav ul:first-child > * {
+		display: none;
+	}
+
+	/* Re-order featured articles */
+	.main-featured-article,
+	.featured-article {
+		grid-column: 1 / -1;
+	}
+
+	/* Change latest news to rows */
+	.news-article-container {
+		grid-template-columns: 1fr;
+	}
 }
 
 /* Funding Startups section */
