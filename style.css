@@ -204,7 +204,21 @@ footer {
 	background-color: #141414;
 	max-width: 100%;
 	height: 400px;
-	color: white;
+}
+
+footer,
+footer i,
+footer a {
+	color: #9d9d9d;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer .logo,
+.social i {
+	color: #fff;
 }
 
 footer nav {
@@ -218,12 +232,35 @@ nav ul {
 	display: flex;
 }
 
+.social li {
+	background-color: #303030;
+	padding: 12px;
+	border-radius: 20px;
+	margin: 5px;
+	border: solid 1px #303030;
+}
+
+.social li:hover {
+	background-color: #141414;
+}
+
+footer .internal-links li {
+	padding: 15px;
+}
+
+footer .internal-links a {
+	font-size: 13px;
+}
+
+footer .internal-links a:hover {
+	color: #fff;
+}
+
 .copyright {
 	background-color: #000000;
 	max-width: 100%;
 	height: 200px;
-}
-
-.social i {
-	color: #fff;
+	display: grid;
+	justify-items: center;
+	align-items: center;
 }
