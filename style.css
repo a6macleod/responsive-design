@@ -267,3 +267,12 @@ footer .internal-links a:hover {
 	position: absolute;
 	bottom: 0;
 }
+
+@media (max-width: 768px) {
+	.wrapper {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+}
