@@ -187,15 +187,15 @@
 
 /* Popular Articles section */
 .popular {
-	width: 100%;
+	max-width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, 350px);
 	grid-gap: 20px;
 	background-color: #e63c1c;
 }
 
 .popular article {
-	width: 300px;
+	/*width: 300px;*/
 	height: 400px;
 	background-color: #e6c510;
 }
