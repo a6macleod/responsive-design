@@ -195,7 +195,6 @@
 }
 
 .popular article {
-	/*width: 300px;*/
 	height: 400px;
 	background-color: #e6c510;
 }
@@ -210,6 +209,13 @@ footer {
 
 footer nav {
 	height: 200px;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
 }
 
 .copyright {
