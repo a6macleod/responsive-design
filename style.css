@@ -29,9 +29,6 @@
 }
 
 .main-nav ul li {
-	display: flex;
-	justify-content: center;
-	align-content: center;
 	padding: 10px;
 }
 
