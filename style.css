@@ -444,40 +444,6 @@
 	}
 }
 
-/*
-.funding-highlight {
-	background-color: #5043e6;
-	width: 50px;
-	min-height: 100px;
-	border: 1px solid white;
-}
-
-@media (max-width: 1024px) {
-	.funding-info header {
-		display: block;
-	}
-}
-
-@media (max-width: 768px) {
-	.funding-info {
-		grid-template-columns: 1fr;
-	}
-}*/
-
-/* Popular Articles section */
-.popular {
-	max-width: 100%;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 350px);
-	grid-gap: 20px;
-	background-color: #e63c1c;
-}
-
-.popular article {
-	min-height: 400px;
-	background-color: #e6c510;
-}
-
 /* Latest Deals Section - Partially styled in latest news section above */
 .latest-deals .price {
 	font-size: 15px;
