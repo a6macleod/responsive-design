@@ -1,5 +1,4 @@
 /* Issues
-	top-nav and tnw2020 not sticky
 	background images act differently in firefox
 */
 
@@ -37,16 +36,30 @@
 	padding: 10px;
 }
 
-.top-nav,
-.bottom-nav {
+.top-nav {
 	display: flex;
 	justify-content: space-between;
 }
 
+/* Sticky Nav header */
+.sticky-nav ul {
+	display: flex;
+}
+
+.sticky-nav ul li {
+	padding: 10px;
+}
+
 .bottom-nav {
+	display: flex;
+	justify-content: space-between;
 	background-color: #fefefe;
 }
 
+.sticky-nav a {
+	color: #9d9d9d;
+	text-decoration: none;
+}
 .bottom-nav a:hover {
 	color: #000;
 }
@@ -77,6 +90,7 @@
 /* Why is sticky not working?? */
 .sticky-nav {
 	position: sticky;
+	top: 0;
 }
 
 @media (min-width: 768px) {
