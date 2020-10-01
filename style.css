@@ -113,7 +113,8 @@
 .main-featured-article {
 	background-color: #e04fe6;
 	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_64e3a5e-796x430.png");
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100%;
 	grid-row: span 2;
 }
@@ -122,14 +123,16 @@
 .featured-article {
 	display: flex;
 	align-items: flex-end;
+	min-height: 250px;
 }
 
 .featured-article {
-	background-color: #37e69f;
+	/*min-height: 250px;*/
 	width: 100%;
 }
 
-.feature-articles .wrapper {
+.feature-articles .article-wrapper,
+.article1 {
 	padding: 10px;
 }
 
@@ -164,10 +167,6 @@
 .feature-articles .article2 {
 	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/Disney-Plus-796x417.jpg");
 	background-position: -100px -100px;
-}
-
-@media (max-width: 1024) {
-	/* Smaller link size */
 }
 
 /* Latest News Section */
