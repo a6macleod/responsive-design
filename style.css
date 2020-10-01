@@ -127,7 +127,6 @@
 }
 
 .featured-article {
-	/*min-height: 250px;*/
 	width: 100%;
 }
 
@@ -172,7 +171,6 @@
 /* Latest News Section */
 .article-section {
 	max-width: 100%;
-	background-color: #5043e6;
 	display: grid;
 	grid-template-columns: 1fr 12fr 1fr;
 	grid-gap: 20px;
@@ -184,16 +182,19 @@
 }
 
 .article-section header {
-	/*max-width: 100px;*/
-	background-color: #e63c1c;
 	min-height: 50px;
 	grid-area: "header";
-	grid-column: 1 / -1;
+	grid-column: 2 / -1;
+}
+
+.article-section header h2 {
+	color: #fe4421;
+	font-size: 35px;
+	font-weight: bold;
 }
 
 .article-container {
 	max-width: 100%;
-	background-color: #e6c510;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fill, 250px);
@@ -201,9 +202,82 @@
 
 .article {
 	min-height: 200px;
-	background-color: #e04fe6;
 }
 
+.article .image {
+	max-width: 300px;
+	height: 150px;
+}
+
+.article h3 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.article .article-author,
+.article time {
+	font-size: 15px;
+	color: #9d9d9d;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.article-section .image {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.latest-news .image1 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/08/Jackie-Chan-WTF.jpg");
+}
+
+.latest-news .image2 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_5ddc697-481x270.png");
+}
+
+.latest-news .image3 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-2020-09-29T180811.819-516x270.png");
+}
+
+.latest-news .image4 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/tnw2020-why_attend-feature_img-1280x7201-480x270.jpg");
+}
+
+.latest-news .image5 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/abn-futurejobs-editorial-513x270.jpg");
+}
+
+.latest-news .image6 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Coding-Lifestyle-1-405x270.jpg");
+}
+
+.latest-news .image7 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/france-ev-subsidies-cut-money-future-car-electric-budget-480x270.jpg");
+}
+
+.latest-news .image8 {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Hey-JF-514x270.jpg");
+}
+
+@media (max-width: 768px) {
+	.article {
+		display: flex;
+		min-height: 100px;
+	}
+
+	.article-section .image {
+		width: 100px;
+		height: 100px;
+		background-size: cover;
+	}
+
+	.article-section figcaption {
+		margin-left: 10px;
+	}
+}
+
+/* Media query for top nav and featured articles */
 @media (max-width: 768px) {
 	/* Move top nav to hamburger menu */
 	.condensed {
@@ -283,6 +357,8 @@
 	min-height: 400px;
 	background-color: #e6c510;
 }
+
+/* Latest Deals Section - Partially styled in latest news section above */
 
 /* Footer section */
 footer {
