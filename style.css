@@ -331,8 +331,16 @@
 
 .funding-info header ul li {
 	padding: 0 10px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
 	color: #fe4421;
 	font-size: 20px;
+	border-right: solid 1px #fe4421;
+}
+
+.funding-info header ul li:last-child {
+	border: none;
 }
 
 .funding-article {
@@ -354,12 +362,14 @@
 	font-weight: bold;
 	background-color: #fd4522;
 	padding: 10px 10px 10px 90px;
+	display: block;
 }
 
 .investment-card-details {
 	width: 100%;
 	background-color: #ffece8;
 	padding: 15px 10px 15px 90px;
+	display: block;
 }
 
 .investment-card-details h4 {
@@ -395,6 +405,29 @@
 
 .investment-details span {
 	color: #b9b8b8;
+}
+
+@media (max-width: 1024px) {
+	.funding-info header {
+		display: block;
+	}
+	.funding-info header ul {
+		margin-top: 10px;
+	}
+
+	.funding-info .article-container .article:last-child {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.funding-info {
+		grid-template-columns: 1fr;
+	}
+
+	.funding-article {
+		display: grid;
+	}
 }
 
 /*
