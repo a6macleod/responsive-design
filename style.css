@@ -127,7 +127,6 @@
 }
 
 .main-featured-article {
-	background-color: #e04fe6;
 	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_64e3a5e-796x430.png");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -135,19 +134,21 @@
 	grid-row: span 2;
 }
 
-.main-featured-article,
-.featured-article {
-	display: flex;
-	align-items: flex-end;
-	min-height: 250px;
-}
-
 .featured-article {
 	width: 100%;
 }
 
+.dark-overlay {
+	display: flex;
+	align-items: flex-end;
+	min-height: 250px;
+	height: 100%;
+	width: 100%;
+	background-color: hsla(0, 0%, 0%, 0.55);
+}
+
 .feature-articles .article-wrapper,
-.article1 {
+.article1 h3 {
 	padding: 10px;
 }
 
