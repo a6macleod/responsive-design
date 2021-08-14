@@ -87,7 +87,6 @@
 	display: block;
 }
 
-/* Why is sticky not working?? */
 .sticky-nav {
 	position: sticky;
 	top: 0;
